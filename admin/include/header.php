@@ -1,4 +1,5 @@
 <?php
+// Help header() function properly
 ob_start();
 include_once '../include/db.php';
 include 'include/function.php';?>
@@ -23,6 +24,8 @@ include 'include/function.php';?>
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../css/spacing-helpers.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

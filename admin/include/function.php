@@ -1,4 +1,21 @@
 <?php
+function QueryTest($Query) {
+    global $connection;
+    if (!$Query) {
+        die("Query $Query Faild!<br>" . mysqli_error($connection));
+    }
+}
+
+function WarningMessage($Message) {
+    echo "<div class='alert alert-danger mt10' role='alert'>$Message</div>";
+}
+
+function IsInsertPostError($Check, $Message) {
+    global $Errors;
+    !isset($Errors[$Check])?: WarningMessage($Message);
+}
+
+// Category:
 function InsertCategory()
 {
     global $connection;
